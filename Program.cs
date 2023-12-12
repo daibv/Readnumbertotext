@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 
 namespace Readnumbertotext
@@ -12,7 +12,7 @@ namespace Readnumbertotext
             int tens;
             int hundreds;
 
-            Console.WriteLine("Enter a number and output shall be that number in string:");
+            Console.WriteLine("Enter a number in range of (0-999) and output shall be that number in string:");
             
             n = int.Parse(Console.ReadLine());
             Console.WriteLine(" The number you have entered in string is:");
@@ -326,7 +326,12 @@ namespace Readnumbertotext
                 }
             }
             
+            if (n>=1000)
+            {
+                Console.WriteLine("Your number is out of my ability to read in string");
+            }
         }
     }
 }
+
 
